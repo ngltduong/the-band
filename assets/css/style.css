@@ -1,0 +1,596 @@
+/* Reset CSS */
+html{
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* Global CSS */
+@keyframes FadeInOut{
+    from{
+        opacity: 0;
+        transform: translateY(-120%);
+    }
+    
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+:root{
+    --background-page: black;
+}
+
+.container{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1.6rem;
+}
+
+ul{
+    display: inline-block;
+}
+
+ul, li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+
+.white-text{
+    color: white !important;
+}
+
+.margin-location-text{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+}
+
+
+
+.padding-32{
+    padding-top: 3.2rem;
+    padding-bottom: 3.2rem;
+}
+
+.padding-64{
+    padding-top: 6.4rem !important;
+    padding-bottom: 6.4rem !important;
+}
+
+.row{
+    margin: 0 -0.8rem 0.8rem -0.8rem;
+}
+
+.col{
+    float: left;
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+}
+
+.col-half{
+    width: 50%;
+}
+
+.col-third{
+    width: 33.33333%;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.clear-fix{
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    font-size: 1.5rem;
+    padding: 0.8rem 1.6rem;
+    border: none;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* -------------------------- */
+
+.wrapper{
+    position: relative;
+}
+
+/* Header */
+#header{
+    background-color: var(--background-page);
+    height: 4.8rem;
+    font-size: 1.6rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    overflow: visible;
+}
+
+#header .nav-list{
+    display: inline-block;
+}
+
+#header > .nav-list > a{
+    position: relative;
+    padding: 1.258rem 2.4rem;
+    cursor: pointer;
+}
+
+#header > .nav-list > a:hover,
+.btn-dropdown:hover a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+
+}
+.sub-list--item a,
+#header > .nav-list > a{
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+#header > .nav-list > a{
+    font-size: 1.5rem;
+}
+
+#header > .nav-list > a:hover{
+    color: black;
+}
+
+.search-icon, 
+.menu-icon{
+    position: absolute;
+    width: 4.8rem;
+    height: 4.8rem;
+    top: 0;
+    right: 0;
+}
+
+.menu-icon{
+    display: none;
+}
+
+.search-icon:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.menu-icon:hover{
+    background-color: #ccc;
+}
+
+.menu-icon:hover i {
+    color: black;
+}
+
+.search-icon i,
+.menu-icon i{
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#header .hover-dropdown{
+    display: inline-block;
+    position: static;
+    left: 0;
+}
+
+.btn-dropdown:hover .sub-list{
+    display: inline-block;
+} 
+
+.sub-list{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.btn-dropdown{
+    position: relative;
+   text-transform: uppercase;
+   padding: 1.258rem 2.4rem;
+   line-height: 1.5;
+}
+
+.btn-dropdown span{
+    display: inline;
+}
+.sub-list--item{
+    padding: 14px 34px 14px 14px;
+    background-color: white;
+    min-width: 48px;
+    color: black;
+    display: block;
+    text-align: left;
+}
+
+.sub-list--item a{
+    color: black;
+    font-size: 1.4rem;
+    text-transform: none;
+}
+
+/* -------------------------- */
+/* Main Contain */
+
+main{
+    margin-top: 4.8rem;
+}
+
+/* Slider */
+
+.slider{
+    position: relative;
+    background: url('../img/chicago.jpg') center / cover no-repeat;
+    width: 100%;
+    padding-top: 50%;
+
+}
+
+.slider .img-description{
+    position: absolute;
+    bottom: 2.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 2.6rem;
+    
+}
+
+.slider .img-description h2,
+.slider .img-description p{
+    color: white;
+    text-shadow: 0px 0px 20px black;
+}
+
+.slider .img-description h2{
+    font-size: 2.2rem;
+    font-weight: 500;
+}
+
+.slider .img-description p{
+    padding-top: 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* About Section Css */
+
+.contain-section{
+    margin-bottom: 1.6rem;
+    text-align: center;
+}
+
+.contain-section h2{
+    font-size: 2.9rem;
+    line-height: 1.6;
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 1.6rem;
+}
+
+.contain-section p{
+    font-size: 1.5rem;
+    line-height: 1.6;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.6;
+}
+
+.about-section  .about-team p{
+    text-align: justify;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+.about-section  p{
+    font-size: 1.4rem;
+    margin-bottom: 2.2rem;
+}
+
+.about-section  img{
+    width: 15.4rem;
+    border-radius: 0.6rem;
+}
+
+/* End About Section */
+
+/* Tourdate Section */
+
+.black-cover{
+    background-color: black !important;
+}
+
+.tourdates .ticket-list{
+    display: block;
+    margin-top: 4.2rem;
+}
+
+.tourdates .ticket-item{
+    background-color: white;
+    padding: 1.2rem 1.6rem;
+    font-size: 1.4rem;
+    border-bottom: 1px solid #ddd;
+    color: grey;
+}
+
+.ticket-item .sold-ticket{
+    background-color: #f44336;
+    color: white;
+    padding: 0.4rem;
+    margin-left: 1.4rem;
+}
+
+.ticket-item .ticket-status {
+    padding: 0.2rem 0;
+    float: right;
+    background-color: black;
+    margin-top: -0.25rem;
+    width: 2rem;
+    height: 2rem;
+    vertical-align: center;
+    border-radius: 50%;
+    color: white;
+}
+
+/* End Tourdate Section */
+
+/* Location Section Css */
+
+.location {
+    background-color: var(--background-page);
+}
+
+.location-img {
+    background-color: var(--background-page);
+}
+
+.location-img img{
+    width: 100%;
+    height: auto;
+}
+
+.location-img img:hover{
+    opacity: 0.6;
+}
+
+.location-textsec{ 
+    margin-top: -0.25rem;
+    background-color: white; 
+    padding: 0.015rem 1.6rem;
+}
+
+.date{
+    font-weight: 300;
+    opacity: 0.6;
+}
+
+.btn-booking{
+    margin-bottom: 1.6rem;
+}
+
+/* End Location Section Css */
+
+/* Booking Modal */
+
+.open{
+    display: flex !important;
+}
+
+.booking-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+    background-color: rgba(0,0,0,0.4);
+    
+}
+
+.container-modal{
+    width: 90rem;
+    box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%) ;
+    animation: FadeInOut .6s; 
+}
+
+.booking-modal .heading-modal{
+    width: 100%;
+    height: 12rem;
+    background-color: #009688!important;
+}
+
+.booking-modal .heading-name {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.booking-modal h2{
+    font-size: 3rem;
+    font-weight: 300;
+    letter-spacing: 0.4rem;
+}
+
+.booking-modal .heading-name i{
+    font-size: 3rem;
+
+}
+
+.close-btn{
+    float: right;
+    color: white;
+    padding: 0.8rem 1.6rem;  
+}
+
+.close-btn:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.close-btn i{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+
+.content-modal{
+    background-color: white;
+    
+}
+
+.main-content{
+    padding: 0.015rem 1.6rem;
+}
+
+.main-content label{
+    display: block;
+    font-size: 1.5rem;
+    color: black !important;
+    margin: 1.5rem 0;
+}
+
+.main-content input{
+    padding: 0.8rem;
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    border: 0.1rem solid #ccc!important;
+}
+
+.main-content label i{
+    color: black ;
+    font-size: 1.5rem;
+}
+
+.main-content .btn-pay{
+    background-color: #009688;
+    font-size: 1.5rem;
+    margin: 1.6rem 0;
+    padding: 1.6rem;
+    width: 100%;
+    cursor: pointer;
+    border: none;
+    color: white;
+}
+
+.main-content .btn-pay:hover{
+    color: black;
+    background-color: #ccc;
+}
+
+.footer-modal{
+    float: right;
+    margin: 1.5rem 0;
+    padding: 0.015rem 0;
+    font-size: 1.5rem;
+}
+
+.footer-modal a{
+    color: #2196F3!important;
+    text-transform: none;
+    text-decoration: underline;
+}
+/* End Booking Modal */
+
+/* Contact Section */
+.contact-main-content{
+    margin-top: 3.2rem;
+
+}
+
+.contact-main-content p{
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+.contact-main-content a{
+    color: blue;
+    opacity: 0.7;
+    text-transform: none;
+}
+
+.contact-main-content a:hover{
+    opacity: 1;
+}
+
+.contact-main-content i{
+    width: 3rem;
+}
+
+.contact-main-content form{
+    margin-bottom: 1.6rem;
+}
+
+.contact-main-content input{
+    padding: 0.8rem;
+    font-size: 1.5rem;
+    width: 100%;
+    overflow: visible;
+}
+
+.contact-main-content button{
+    float: right;
+    text-transform: uppercase;
+}
+/* End Contact Section */
+
+/*Map Section Css */
+.map img{
+    width: 100%;
+    vertical-align: middle;
+    filter: grayscale(50%);
+}
+
+/* Footer Section */
+
+.footer{
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+}
+
+.footer i{
+    margin: 0 0.1rem;   
+    font-size: 2.4rem;
+}
+
+.footer p{
+    margin: 1.5rem 0;
+    font-size: 1.5rem;
+  
+}
+
+.footer p a{
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: lowercase;
+    text-decoration:  underline;
+}
+

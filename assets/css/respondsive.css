@@ -1,0 +1,144 @@
+/* Mobile respondsive < 768px*/
+@media screen and (max-width: 47.9375em) {
+    /* Global css */
+    .s-padding-16{
+        padding-top: 1.6rem;
+        padding-bottom: 1.6rem;
+    }
+
+    .s-mt-16{
+        margin-top: 1.6rem;
+    }
+
+    .s-mt-32{
+        margin-top: 3.2rem;
+    }
+
+    .s-col{
+        width: 100%;
+    }
+    /* Heading Css */
+    #header{
+        overflow: hidden;
+    }
+
+    .slider .img-description{
+        display: none;
+    }
+    #header .nav-list{
+        display: block;
+    }
+
+    #header > .nav-list > a{
+        display: block;
+    }
+
+    #header > .nav-list > a:first-child{
+        display: inline-block;
+    }
+
+    #header .hover-dropdown{
+        display: block;
+    }
+
+
+    #header .btn-dropdown{
+        display: block;
+        width: 100%;
+        text-align: left;
+        padding: 0px 0px;
+    }
+
+    .sub-list{
+        position: initial;
+    }
+    .btn-dropdown:hover .sub-list{
+        display: block;
+    }
+
+    .btn-dropdown span{
+        display: inline-block;
+        padding-top: 10px;
+        padding-left: 25px;
+        margin-bottom: 10px;
+    }
+
+    .btn-dropdown:hover a{
+        background-color: rgba(0, 0, 0, 0.6);
+        padding-left: 40px;
+        color: white;
+    }
+    .btn-dropdown:hover a:hover{
+        color: black;
+    }
+
+    .search-icon{
+        display: none;
+    }
+    .menu-icon{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+ /*End Heading Css ----------------------- */
+
+ /* About Section Css */
+    .about-section img{
+        width: 60%;
+    }
+
+    .btn-booking,
+    .contact-main-content button{
+        width: 100%;
+        padding: 16px 0px;
+    }
+    .contact-main-content input:first-child {
+        margin-top: 0.8rem;
+    }
+}
+
+/* Tablet and Mobile responsive <= 1024px*/
+@media screen and (max-width: 64em) {
+
+    .container-modal{
+        width: 100%;
+        margin: 0 16px;
+    }
+
+    .main-content label{
+        font-size: 1.8rem;
+    }
+
+    .main-content input{
+        padding: 1.2rem 0.8rem;
+        font-size: 2rem;
+    }
+
+    .footer-modal{
+        font-size: 1.8rem;
+    }
+
+    .main-content .btn-pay{
+        font-size: 2.4rem;
+    }
+
+    .contact-main-content p{
+        line-height: 2;
+    }
+
+    .contact-main-content input{
+        padding: 1.2rem 0.8rem;
+        font-size: 1.8rem;
+    }
+
+    .footer i{
+        margin: 0 0.5rem;
+    }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em){
+    .btn{
+        padding: 1.4rem 1.8rem;
+    }
+}

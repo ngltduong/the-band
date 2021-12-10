@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/respondsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>The Band</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Booking Ticket Modal -->
+        <div class="booking-modal js-booking-modal">
+            <div class="container-modal js-container-modal">
+                <div class="heading-modal text-center">
+                    <div class="close-btn js-close-btn"><i class="fa fa-close"></i></div>
+                    <div class="heading-name white-text"><h2><i class="fa fa-suitcase"></i> Tickets</h2></div>
+                </div>
+                <div class="content-modal">
+                    <div class="main-content">
+                        <div class="infor-item">
+                            <label for="quatity-people" class="title-booking"><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label>
+                            <input type="text" name="quatity-people" id="" placeholder="How many">
+                        </div>
+                        <div class="infor-item">
+                            <label for="email-contact" class="title-booking"><i class="fa fa-user"></i> Send To</label>
+                            <input type="email" name="email-contact" id="" placeholder="Enter email">
+                        </div>
+                        <button class="btn-pay">Pay <i class="fa fa-check"></i></button>
+                        <div class="footer-modal">
+                            <p class="support-client-link">Need <span><a href="#">help?</a></span></p>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Booking Modal -->
+        <!-- Header Start-->
+        <header id="header" class="js-header">                                      
+            <div class="nav-list">
+                <a class="nav-list-item js-nav-list-item" href="#">Home</a>
+                <a class="nav-list-item js-nav-list-item" href="#about">Band</a>
+                <a class="nav-list-item js-nav-list-item" href="#tourdate">Tour</a>
+                <a class="nav-list-item js-nav-list-item" href="#contact">Contact</a>
+                <div class="hover-dropdown">
+                    <button class="btn btn-dropdown" href="#"><span>More <i class="fa fa-caret-down"></i></span>
+                         <div class="sub-list">
+                             <a class="sub-list--item">Merchandise</a>
+                             <a class="sub-list--item">Extras</a>
+                             <a class="sub-list--item">Media</a>
+                         </div>
+                     </button>    
+                </div>
+            </div>    
+            <div class="search-icon">
+                <i class="fa fa-search"></i>
+            </div>
+            <div class="menu-icon js-menu-icon">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+            </div>
+        </header>
+        <!-- Header End -->
+        <!-- Main Content Start -->
+        <main class="main">
+            <!-- Slider Start -->
+            <div class="slider">
+                <div class="img-description text-center">  
+                    <h2 class="img-title">New York</h2>
+                    <p>The atmosphere in New York is lorem ipsum.</p>
+                </div>
+            </div>
+            <!-- Slider Start -->
+            <!-- About Section Start -->
+            <section id="about" class="about-section container padding-64">
+                <div class="contain-section ">
+                    <h2 class="contain-title">THE BAND</h2>
+                    <p class="contain-slogan">We love music</p>
+                </div>
+                <div class="about-team">
+                    <p>We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="row padding-32 s-padding-16">
+                    <div class="s-col s-mt-32 col col-third text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="member-img">
+                    </div>
+                    <div class="s-col s-mt-32 col col-third text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="member-img">
+                    </div>
+                    <div class="s-col s-mt-32 col col-third text-center">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/img/bandmember.jpg" alt="member-img">
+                    </div>
+                    <div class="clear-fix"></div>
+                </div>
+            </section>
+            <!-- About Section End -->
+            <!-- Tourdate Section Start-->
+            <div class="black-cover">
+                <section id="tourdate" class="tourdates container padding-64">
+                    <div class="contain-section white-text">
+                        <h2 class="contain-title">TOUR DATES</h2>
+                        <p class="contain-slogan">Remember to book your tickets!</p>
+                    </div>
+                    <ul class="ticket-list">
+                        <li class="ticket-item">September <span class="sold-ticket">Sold out</span></li>
+                        <li class="ticket-item">October <span class="sold-ticket">Sold out</span></li>
+                        <li class="ticket-item">November<span class="ticket-status text-center">3</span></li>
+                    </ul>
+                    <div class="row location padding-32 s-padding-16">
+                        <div class="s-col s-mt-16 col col-third">
+                            <div class="location-img"><img  src="./assets/img/newyork.jpg" alt="newyork"></div>
+                            <div class="location-textsec">
+                                <div class="location-infor">
+                                    <h3 class="location-name margin-location-text">New York</h3>
+                                    <p class="date margin-location-text">Fri 27 Nov 2016</p>
+                                    <p class="location-desc margin-location-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                </div>
+                                <button class="btn btn-booking js-booking-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="s-col s-mt-16 col col-third">
+                            <div class="location-img"><img  src="./assets/img/paris.jpg" alt="paris"></div>
+                            <div class="location-textsec">
+                                <div class="location-infor">
+                                    <h3 class="location-name margin-location-text">Paris</h3>
+                                        <p class="date margin-location-text">Sat 28 Nov 2016</p>
+                                        <p class="location-desc margin-location-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                </div>
+                                <button class="btn btn-booking js-booking-ticket">Buy Tickets</button>
+                            </div>
+                        
+                        </div>
+                        <div class="s-col s-mt-16 col col-third">
+                            <div class="location-img"><img  src="./assets/img/sanfran.jpg" alt="sanfran"></div>
+                            <div class="location-textsec">
+                                <div class="location-infor">
+                                    <h3 class="location-name margin-location-text">San Francisco</h3>
+                                        <p class="date margin-location-text">Sun 29 Nov 2016</p>
+                                        <p class="location-desc margin-location-text">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                </div>
+                                <button class="btn btn-booking js-booking-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </section>
+            </div>
+            <!-- Tourdate Section End-->
+            <!-- Contact Section Start -->
+            <section id="contact" class="contact container padding-64">
+                <div class="contain-section">
+                    <h2 class="contain-title">CONTACT</h2>
+                    <p class="contain-slogan">Fan? Drop a note!</p>
+                </div>
+                <div class="contact-main-content mt-16">
+                    <div class="row">
+                        <div class="s-col col col-half mt-16">
+                            <p><span><i class="fa fa-map-marker"></i></span> Chicago, US</p>
+                            <p><span><i class="fa fa-phone"></i></span> Phone: <a href="tel:+00 151515">+00 151515</a></p>
+                            <p><span><i class="fa fa-envelope"></i></span> Email: <a href="mailto:mail@mail.com">mail@mail.com</a></p>
+                        </div>
+                        <div class="s-col col col-half mt-16">
+                            <form action="">
+                                <div class="row">
+                                    <div class="s-col col col-half">
+                                        <input class="contact-input" type="text" name="Name" id="" placeholder="Name" required>
+                                    </div>
+                                    <div class="s-col col col-half">
+                                        <input class="contact-input" type="email" name="email" id="" placeholder="Email" required>
+                                    </div>
+                                    <div class="clear-fix"></div>
+                                </div>
+                                <input type="text" name="message" id="" class="contact-input" placeholder="Message">
+                            </form>
+                            <button class="btn contact-btn">Send</button>
+                          
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Contact Section End -->
+            <!-- Map Section Start -->
+            <section id="map" class="map">
+                <div class="map-img"><img src="./assets/img/map.jpg" alt=""></div>
+            </section>
+            <!-- Map Section End -->
+            <!-- Footer Section Start -->
+            <section class="footer padding-64 text-center">
+                <div class="icon-infor">
+                    <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                    <i class="fa fa-snapchat" aria-hidden="true"></i>
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div>
+                <p>Powered by <a href="">w3.css</a> </p>
+            </section>
+            <!-- Footer Section End -->
+        </main>
+    </div>
+    <script type="text/javascript" src="./assets/main.js"></script>
+</body>
+</html>
